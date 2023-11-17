@@ -1,0 +1,384 @@
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 89%;
+	height: 30px;
+	background-color: #f9b515;
+	border-radius: 25px;
+	font-size: 0;
+}
+
+.container{
+  overflow-x: hidden;
+}
+
+nav a {
+	line-height: 36px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    font-size: 25px;
+    margin-left: 40%;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.footer{
+    margin-top: 2%;
+}
+
+h2{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+    color: #0A2D72;
+}
+
+
+h3{
+  font-family: 'Edu TAS Beginner', cursive;
+  text-align: center;
+  color: #0A2D72;
+}
+
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+	font-size: 27px;
+    color: #000000;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .left{
+    font-size: 50px;
+    margin-right: 85%;
+    color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  
+  
+  .right{
+	font-size: 50px;
+  margin-left: 40%;
+	color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    border: #fff;
+    border-radius: 60%;
+  }
+  
+  .right:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+  
+  .left:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+
+
+  .modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 10;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+  }
+  
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  .modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 200%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .modal h1 {
+    margin: 0;
+  }
+  
+  .modal p {
+    opacity: 0.7;
+    font-size: 14px;
+  }
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20%;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 505px;
+    background-color: #f0f0f0;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 18px;
+    margin-left: -100px;
+    font-family: 'Edu TAS Beginner', cursive;
+  }
+  
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+
+  .wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 85vmin;
+    height: 25em;
+    margin: 2rem auto;
+    border: 8px solid;
+    border-image: linear-gradient(-50deg, #0A2D72, #0A2D72, #0A2D72, #0A2D72, #0A2D72, #0A2D72, #0A2D72) 1;
+    transition: .3s ease-in-out;
+    position: relative;
+
+  }
+  .overlay {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 1rem .75rem;
+    background: #0A2D72;
+    transition: .4s ease-in-out;
+    z-index: 1;
+  }
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15vmin;
+    height: 100%;
+    padding: .5rem 0 0 .5rem;
+    border: 3px solid;
+    border-image: 
+        linear-gradient(
+          to bottom, 
+          #f9b515 5%,
+          #f9b515 35% 65%,
+          #f9b515 95%
+        ) 0 0 0 100%;
+    transition: .3s ease-in-out .2s;
+    z-index: 1;
+  }
+  .image-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60vmin;
+    height: 100%;
+    background-image: url("../../img/2/Servicios.png");
+    background-size: cover;
+    transition: .3s ease-in-out;
+  }
+  
+  .inset {
+    max-width: 40%;
+    margin: 0.25em 1em 1em 0;
+    border-radius: 0.25em;
+    float: left;
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 55px;
+    height: 4vmin;
+    transition: .3s ease-in-out .3s;
+  }
+  .dot {
+    width: 14px;
+    height: 14px;
+    background: yellow;
+    border: 1px solid indigo;
+    border-radius: 50%;
+    transition: .3s ease-in-out .3s;
+  }
+  
+  .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60vmin;
+    height: 100%;
+    padding: 3vmin 4vmin;
+    background: #fff;
+    box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+    overflow-y: scroll;
+  }
+  
+  .wrap:hover .overlay
+   {
+    transform: translateX(-60vmin);
+  }
+  .wrap:hover .image-content {
+    width: 30vmin;
+  }
+  .wrap:hover .overlay-content {
+    border: none;
+    transition-delay: .2s;
+    transform: translateX(60vmin);
+  }
+  .wrap:hover .dots {
+    transform: translateX(1rem);
+  }
+  .wrap:hover .dots .dot {
+    background: white;
+  }
+  
+
+  .animate {
+    animation-duration: 0.7s;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+  }
+
+  .pop { animation-name: pop; }
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+  
+  .slide { animation-name: slide; }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translate(4em, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  .slide-left { animation-name: slide-left; }
+  @keyframes slide-left {
+    0% {
+      opacity: 0;
+      transform: translate(-40px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  
+  .slide-up {animation-name: slide-up;}
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(3em);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  .delay-3 {
+    animation-delay: 0.9s;
+  }
+  .delay-4 {
+    animation-delay: 1.2s;
+  }
+  .delay-5 {
+    animation-delay: 1.5s;
+  }
+  .delay-6 {
+    animation-delay: 1.8s;
+  }
+  .delay-7 {
+    animation-delay: 2.1s;
+  }
+  .delay-8 {
+    animation-delay: 2.4s;
+  }
+
+  .card{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    width:400px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #0A2D72;
+    border-radius:15px;
+    margin-left: 20%;
+    margin-top: 35%;
+    margin-bottom: 1%;
+}

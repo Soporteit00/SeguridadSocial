@@ -1,0 +1,166 @@
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 89%;
+	height: 30px;
+	background-color: #f9b515;
+	border-radius: 25px;
+	font-size: 0;
+}
+
+nav a {
+	line-height: 36px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    font-size: 25px;
+    margin-left: 40%;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.footer{
+    margin-top: 33.6%;
+}
+
+h2{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+    color: #0A2D72;
+}
+
+ul{
+    font-family: 'Edu TAS Beginner', cursive;
+    margin-left: 5%;
+    font-size: 23px;
+    color: #000000;
+}
+
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+	font-size: 27px;
+    color: #000000;
+}
+
+h3{
+  font-family: 'Edu TAS Beginner', cursive;
+  text-align: center;
+  color: #0A2D72;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .left{
+    font-size: 50px;
+    margin-right: 85%;
+    color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  
+  
+
+  .right{
+    font-size: 50px;
+    margin-left: 40%;
+    color: #0A2D72;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-40%);
+      border: #fff;
+      border-radius: 60%;
+    }
+  
+  .right:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+  
+  .left:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+
+  .container2  {
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 510px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: justify;
+    color: black;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .flap {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flap::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 45%;
+    background: url("../../img/logo/MicrosoftTeams-image\ \(5\).png") white;
+    background-position: 70px;
+    background-repeat: no-repeat;
+    transition: 1s;
+  }
+  
+  .flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 55%;
+    right: 0;
+    background: url("../../img/logo/MicrosoftTeams-image\ \(5\).png") white;
+    background-position: -160px;
+    background-repeat: no-repeat;
+    transition: 1s;
+  }
+  
+  .container:hover .flap::after {
+    transform: translatex(300px);
+  }
+  
+  .container:hover .flap::before{
+    transform: translatex(-300px);
+  }
+
+  .container3 {
+    position: absolute;
+    left: 65%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 508px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+  }
+  

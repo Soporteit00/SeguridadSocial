@@ -1,0 +1,180 @@
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 89%;
+	height: 30px;
+	background-color: #f9b515;
+	border-radius: 25px;
+	font-size: 0;
+}
+
+nav a {
+	line-height: 36px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    font-size: 25px;
+    margin-left: 40%;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.footer{
+    margin-top: 3.5%;
+}
+
+h2{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+    color: #0A2D72;
+}
+
+h3{
+  font-family: 'Edu TAS Beginner', cursive;
+  text-align: center;
+  color: #0A2D72;
+}
+
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+  	font-size: 27px;
+    color: #0A2D72;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .left{
+    font-size: 50px;
+    margin-right: 85%;
+    color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  
+  
+  .right{
+    font-size: 50px;
+    margin-left: 40%;
+    color: #0A2D72;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-40%);
+      border: #fff;
+      border-radius: 60%;
+    }
+  
+  .right:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+  
+  .left:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+
+    .card {
+      position: relative;
+      width: 350px;
+      height: 420px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+      margin-top: 2%;
+
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.face1 {
+          box-sizing: border-box;
+          .java {
+            background-color: #000000;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .python {
+            background-color: #000000;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .cSharp {
+            background-color: #000000;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        &.face2 {
+          transition: 0.5s;
+
+          h2 {
+            font-size: 11em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+          }
+        }
+      }
+    }
+
+    .card:hover .face.face2 {
+      height: 60px;
+    }
+
+    .card:nth-child(1) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #0A2D72 0%,
+        #ffffff 45%,
+        #0A2D72 100%
+      );
+      border-radius: 15px;
+    }
+
+    .card:nth-child(2) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #0A2D72 0%,
+        #ffffff 45%,
+        #0A2D72 100%
+      );
+      border-radius: 15px;
+    }
+
+    .card:nth-child(3) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #0A2D72 0%,
+        #ffffff 45%,
+        #0A2D72 100%
+      );
+      border-radius: 15px;
+    }
+  }
+

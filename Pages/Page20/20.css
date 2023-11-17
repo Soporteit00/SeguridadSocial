@@ -1,0 +1,128 @@
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 89%;
+	height: 30px;
+	background-color: #f9b515;
+	border-radius: 25px;
+	font-size: 0;
+}
+
+nav a {
+	line-height: 36px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    font-size: 25px;
+    margin-left: 40%;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.footer{
+    margin-top: -1%;
+}
+
+h2{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+    color: #0A2D72;
+}
+
+h3{
+  font-family: 'Edu TAS Beginner', cursive;
+  text-align: center;
+  color: #0A2D72;
+}
+
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+	font-size: 27px;
+    color: #000000;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .left{
+    font-size: 50px;
+    margin-right: 85%;
+    color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  
+  
+  .right{
+	font-size: 50px;
+	margin-left: 82%;
+	color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  
+  .right:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+  
+  .left:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+
+  button {
+    background-color: #0A2D72;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+    margin-top: 38%;
+    margin-left: 42%;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #f9b515 0%, #f9b515 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 9em;
+   }
+
+   .container{
+    background-image: url("../../img/20/final.png");
+    background-position: top center;
+    background-size: contain;
+    background-attachment: fixed;
+    position:relative;
+    z-index: 1;
+    width: 75%;
+}

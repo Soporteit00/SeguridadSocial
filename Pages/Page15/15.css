@@ -1,0 +1,89 @@
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 89%;
+	height: 30px;
+	background-color: #f9b515;
+	border-radius: 25px;
+	font-size: 0;
+}
+
+nav a {
+	line-height: 36px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    font-size: 25px;
+    margin-left: 40%;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.footer{
+    margin-top: -1.4%;
+}
+
+h2{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+    color: #0A2D72;
+}
+
+
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: center;
+	font-size: 27px;
+    color: #000000;
+}
+
+
+ul{
+    font-family: 'Edu TAS Beginner', cursive;
+    margin-left: 5%;
+	font-size: 26px;
+    color: #000000;
+}
+
+.img{
+    width: 400px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .left{
+    font-size: 50px;
+    margin-right: 85%;
+    color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  
+  
+  .right{
+	font-size: 50px;
+	margin-left: 82%;
+	color: #0A2D72;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  
+  .right:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
+  
+  .left:hover {
+    color: #f9b515;
+    cursor: pointer;
+  }
